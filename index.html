@@ -1,23 +1,21 @@
 ---
-title: Hello, World!
+title: Blog Posts
 layout: default
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <li class="blog-box col-md-1-offset col-md-10">
+      <span class="popup tldr-text col-sm-4 col-sm-8-offset">{{ post.tldr }}</span>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link col-md-3-offset" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="tldr col-sm-4 col-sm-8-offset">TL;DR </span>
+    </li>
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe col-md-12">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </ul>
 </div>

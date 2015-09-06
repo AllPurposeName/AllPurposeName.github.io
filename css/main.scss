@@ -2,22 +2,34 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
-
+@link-color: #8AAFD5;
+@grey-color: #E00B50;
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-size:   50px;
+$small-font-size:  $base-font-size * 0.725;
+$medium-small-font-size:  $base-font-size * 0.475;
+$very-small-font-size:  $base-font-size * 0.375;
+$base-line-height: 1.25;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #F0F1CE;
+$text-color-blue:  #90F1CE;
+$text-color-blue-dark: darken($text-color-blue, 40%);
+$text-color-dark:  darken($text-color, 50%);
+$background-color: #1C2C34;
 
-$grey-color:       #828282;
+$brand-color:      #8AAFD5;
+
+$link-color:         #8AAFD5;
+//$link-visited-color: #575936;
+$link-visited-color: darken($link-color, 25%);
+//$link-hover-color:   #BDBf9C;
+$link-hover-color:  lighten($link-color, 20%);
+
+$grey-color:       #E99B50;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -37,16 +49,35 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+"base",
+"layout",
+"syntax-highlighting"
 ;
+
+// Custom css
+.post-list {
+  padding-top: 30px;
+}
+
+.container {
+  padding-right: 0;
+}
+#footer-description {
+ font-size: $very-small-font-size;
+
+}
+
+.topic-header {
+  font-weight: lighter;
+  font-size: $small-font-size;
+  color: $text-color-blue;
+}
