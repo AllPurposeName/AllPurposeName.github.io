@@ -7,7 +7,6 @@ description: > # this means to ignore newlines until "baseurl:"
   revolve around coding or gaming with a few miscellaneous bits tossed about.
   Feel free to hit me up via email anytime!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://allpurposename.com" # the base hostname & protocol for your site
 twitter_username: AllPurposeDJ
 github_username:  AllPurposeName
 linked_in:  AllPurposeName
