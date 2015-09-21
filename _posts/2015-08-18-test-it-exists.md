@@ -6,12 +6,11 @@ tags: turing testing TDD BDD iterative steps
 categories: code-life
 tldr: Namespace your projects and keep granular tests
 ---
-
 Often times I am asked by budding Rubyists why we write such simple iterative
 steps when we test drive our development. I give a pretty standard Turing alumni
-response, but I like to append a little anecdote when I have time (and their
-attention). The story short, sweet, and best of all replicable. It goes like
-this.
+response espousing the usefulness of having robust, test driven code. I do like
+to append a little anecdote when I have time (and their attention). The story is
+short, sweet, and best of all replicable. It goes like this:
 
 One day I was asked to debug a failing test by a now good friend
 [Dmitry](dmitryblog). He was working on [Enigma](turing repo for enimga), a
@@ -69,19 +68,19 @@ which were not solving the problem. These include:
  * Not inheriting from Minitest correctly ```ParserTest << MiniTest:unit```
 (there are so many issues here)
 
-
 The list of newbie mistakes goes on.
 
 20 minutes later I gave up on the failing tests. I looked at the one green dot
-on the screen; the only passing test. {% highlight ruby %}def test_it_exists
+on the screen; the only passing test.
+{% highlight ruby %}def test_it_exists
   assert Parser
-end{% endhighlight %} The only thing working was the Parser constant existing. I
-threw in a ```binding.pry``` and immediately realized what was wrong. There
-already exists a ```Parser``` module in the Ruby Standard Library. The Enigma
-file mistakenly had a line ```require 'parser'```. The lazy ```require
-'enigma'``` scooped up this Parser module. So in total half an hour of error
-delving, one aha moment, two minutes of renaming all amounted to one lesson
-definitely learned.
+end{% endhighlight %}
+The only thing working was the Parser constant existing. I threw in a
+```binding.pry``` and immediately realized what was wrong. There already exists
+a ```Parser``` constant in the Ruby Standard Library. It's some module the Enigma
+file had mistakenly acquired via ```require 'parser'```. The lazy ```require
+'enigma'``` in the test file scooped up this Parser module. So in total half an
+hour of error delving, one aha moment, and two minutes of renaming all amounted
+to a few lessons definitely learned.
 
 Namespace your project and test that it exists.
-
