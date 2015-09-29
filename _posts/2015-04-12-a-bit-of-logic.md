@@ -4,6 +4,7 @@ title:  "Sunday Morning Logic"
 date:   2015-04-12 11:18:38
 tags: logic tortoise Achilles yak shaving
 categories: misc
+tldr: A common mistake I see when people argue is that they don't refute an assertion, instead they bring up another argument entirely.
 ---
 
 Take those hypotheticals with a grain of salt...

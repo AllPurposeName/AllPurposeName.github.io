@@ -4,6 +4,7 @@ title:  "The Turing Bar"
 date:   2015-06-30 11:08:46
 tags: turing culture
 categories: code-life
+tldr: Turing is an awesome environment to learn and grow into a developer, and an unexpected (but important) part of being a developer is to have a taste for culture.
 ---
 I had always heard about work culture, but never experienced much of it.
 
