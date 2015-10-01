@@ -9,7 +9,7 @@
     {% if page.title %}
     <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }} </a>
     {% endif %}
-    {% if forloop.index < site.pages.size and loop_index == 1 %}
+    {% if forloop.index < site.pages.size and loop_index != 1 %}
     <div class="sep-line">|</div>
     {% endif %}
     {% endfor %}
