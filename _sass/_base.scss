@@ -13,6 +13,15 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+  height: 100%;
+}
+
+.footer-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -23,11 +32,13 @@ body {
   -webkit-text-size-adjust: 100%;
   background-image: url("../img/fuzzbackground1.png");
   background-size: stretch;
+  height: 100%;
 }
 
 .container {
   margin-top: 5%;
   width: 100%;
+  min-height: 350px;
 }
 
 p {

@@ -144,6 +144,9 @@
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
   background-color: $background-color;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-heading {
@@ -279,6 +282,45 @@
   }
 }
 
+.post-content-resume {
+  background-color: $background-color;
+  background-image: url("../img/az-subtle.png");
+  background-size: repeat;
+  margin-left: 50%;
+  padding-bottom: 50px;
+  font-size: $medium-small-font-size;
+  margin-bottom: $spacing-unit;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), inset 0px 1px 14px 5px rgba(138,174,213,0.34);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: $spacing-unit;
+
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}
+
 .post-content-about {
   background-color: $background-color;
   background-image: url("../img/az-subtle.png");
@@ -291,6 +333,7 @@
   border-radius: 8px;
   padding: 25px;
   margin-bottom: $spacing-unit;
+  margin-right: $spacing-unit;
 
 
   h2 {

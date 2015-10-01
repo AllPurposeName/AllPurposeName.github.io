@@ -11,4 +11,3 @@ categories: love-games
 2. Not Agile
 
 3. "Not Diverse"
-
