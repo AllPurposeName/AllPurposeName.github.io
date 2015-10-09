@@ -2,6 +2,24 @@
  * Site header
  */
 
+.project-topic {
+  color: $text-color-blue;
+}
+
+#project-link {
+  padding: 0;
+}
+
+#project-title {
+  font-size: $large_font_size;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.image-preview-box {
+  min-height: 100%;
+  margin-top: 5%;
+}
+
 .popup {
   margin-top: 50px;
   display: none;
@@ -39,7 +57,7 @@
 
 .project-box {
   min-height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .blog-box {
@@ -150,7 +168,8 @@
 .site-footer {
   background-image: url("../img/az-subtle.png");
   background-size: repeat;
-  border-top: 1px solid $grey-color-light;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), inset 0px 4px 1px 1px rgba(138,174,213,0.34);
+  border-radius: 4px;
   padding: $spacing-unit 0;
   background-color: $background-color;
   position: relative;

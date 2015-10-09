@@ -3,10 +3,10 @@ quibble:
   url: http://www.quibble.gripe
   github: http://www.github.com/allpurposename/Quibble
   img: quibble.jpeg
-  Goal: >
+  goal: >
     In this two week mastery project my team of three made a Slack clone to
     demonstrate websockets, microservices, and asynchronicity.
-  Responsibilities: >
+  responsibilities: >
     I was the primary Rails developer on this project. I also helped smooth the
     JavaScript development.
 handMeUps:
@@ -14,11 +14,11 @@ handMeUps:
   url: http://handmeups.herokuapp.com
   github: http://www.github.com/allpurposename/the_pivot
   img: handmeups.jpeg
-  Goal: >
+  goal: >
     For this three week project we were challenged to pivot a previous project
     of a restaurant into an Etsy-like clothing site. The project was assigned
-    halfway through the program.
-  Responsibilities: >
+    halfway through the Turing School program.
+  responsibilities: >
     Refactoring the cart, implementing the mailer, pivoting the
     database, and pushing logic down the stack.
 pairr:
@@ -26,8 +26,14 @@ pairr:
   url: http://pairer.herokuapp.com
   github: http://www.github.com/allpurposename/final_assessment
   img: pairer.jpeg
-  Goal: >
-    We were given 24 hours to create a mini-tinder clone for developers. The main
-    project goals included. There were no frontend requirements.
-  Responsibilities: >
-    I was completely responsible for the entire project. Including that great css.
+  goal: >
+    We were given 24 hours to create a mini-tinder clone for developers.
+    There were no frontend requirements.
+  responsibilities: >
+    I was completely responsible for the entire project. Including that great
+    css.  The takeaways from this project mostly revolved around technical debt.
+    I've learned a few solid implementations of design patterns in rails
+    projects, and getting to put them to use to save me time when I really
+    needed it felt great. Not given the time to refactor, however, left my
+    controllers too fat and the logic of state changing functionality (a state
+    machine) for another day.

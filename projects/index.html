@@ -1,21 +1,35 @@
 ---
-title: Portfolio
+title: Projects
 layout: default
 permalink: /projects/
-description: While at the Turing School of Software and Design I completed dozens of projects. Here are a few
 ---
 
 <div class="home">
-
+  {% assign description = "While at the Turing School of Software and Design I completed dozens of projects. Here are a few:" %}
+  <div class="blog-box col-md-12 spacing-unit">
+    <div class=" col-md-12">
+      <h1 class="project-title col-md-3-offset">{{ description }}</h1>
+    </div>
+  </div>
   {% assign projects = site.data.projects %}
   {% for project in projects %}
   {% assign proj = projects[project.first] %}
   <div class="blog-box col-md-12 spacing-unit">
+    <div class=" col-md-12">
+      <h1 id="project-title" class="post-link col-md-3-offset">{{ proj.title }}</h1>
+    </div>
     <div class="project-box col-md-6">
-      <a class="post-link col-md-3-offset" href="{{ proj.url }}">{{ proj.title }}</a>
+      <a id="project-link" class="post-link col-md-3-offset" href="{{ proj.github }}">Github</a>
+    </div>
+    <div class="project-box col-md-6">
+      <a id="project-link" class="post-link col-md-3-offset" href="{{ proj.url }}">Production</a>
+    </div>
+    <div class="project-box col-md-6">
+      <h2 class="project-topic">Goal:</h2><p>{{ proj.goal }}</p>
+      <h2 class="project-topic">Responsibilities:</h2><p>{{ proj.responsibilities }}</p>
     </div>
     <div class="image-preview-box col-md-6">
-      <img src="{{ site.url }}/img/{{ proj.img }}" alt="{{ proj.title }}">
+      <a href="{{ site.url }}/img/{{ proj.img}}"><img src="{{ site.url }}/img/{{ proj.img }}" alt="{{ proj.title }}"></a>
     </div>
   </div>
   {% endfor %}
