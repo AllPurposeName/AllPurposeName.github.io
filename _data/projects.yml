@@ -5,7 +5,11 @@ quibble:
   img: quibble.jpeg
   goal: >
     In this two week mastery project my team of three made a Slack clone to
-    demonstrate websockets, microservices, and asynchronicity.
+    demonstrate websockets, microservices, and asynchronicity. The spin on our
+    app comes from real life senseless arguments between two of the developers
+    on the team. One moderator, two minutes of discussion, and an irrefutable
+    decision later, we were a happy team. We wanted to bring that experience to
+    everyone!
   responsibilities: >
     I was the primary Rails developer on this project. I also helped smooth the
     JavaScript development.
