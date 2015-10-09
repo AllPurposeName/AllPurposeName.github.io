@@ -1,6 +1,7 @@
 ---
 title: Blog Posts
 layout: default
+permalink: /blog/
 ---
 
 <div class="home">
@@ -8,7 +9,7 @@ layout: default
 
   <ul class="post-list col-md-12">
     {% for post in site.posts %}
-    <li class="blog-box col-md-10">
+    <li class="blog-box col-md-12">
       <span class="popup tldr-text col-sm-4 col-sm-8-offset">{{ post.tldr }}</span>
       <span class="post-meta col-md-offset-9 col-md-3">{{ post.date | date: "%b %-d, %Y" }}</span>
       <a class="post-link col-md-3-offset" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
