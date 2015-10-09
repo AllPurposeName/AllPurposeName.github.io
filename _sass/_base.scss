@@ -181,10 +181,14 @@ pre {
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
+  min-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  min-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: 16%;
+  margin-left: 16%;
+  position: relative;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  margin-bottom: calc(#{$spacing-unit} * 2);
   @extend %clearfix;
 
   @include media-query($on-laptop) {
