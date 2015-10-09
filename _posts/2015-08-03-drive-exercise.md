@@ -4,8 +4,7 @@ title:  "Drive Exercise"
 date:   2015-08-03 11:26:28
 tags: turing culture motivation
 categories: code-life
-tldr: A neat exercise helped me better understand who I am as a content
-creator. Great emphasis on workflow and motivation.
+tldr: A neat exercise helped me better understand who I am as a content creator. Great emphasis on workflow and motivation.
 ---
 
 ### In this exercise, we answered 6 questions on motivation derived from Daniel Pink
