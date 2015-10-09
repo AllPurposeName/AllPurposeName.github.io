@@ -1,6 +1,7 @@
 quibble:
   title:  Quibble
-  url: http://www.quibble.gripe
+  url: http://192.241.203.99/
+  real_url: #http://www.quibble.gripe
   github: http://www.github.com/allpurposename/Quibble
   img: quibble.jpeg
   goal: >
