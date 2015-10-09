@@ -1,0 +1,33 @@
+quibble:
+  title:  Quibble
+  url: http://www.quibble.gripe
+  github: http://www.github.com/allpurposename/Quibble
+  img: quibble.jpeg
+  Goal: >
+    In this two week mastery project my team of three made a Slack clone to
+    demonstrate websockets, microservices, and asynchronicity.
+  Responsibilities: >
+    I was the primary Rails developer on this project. I also helped smooth the
+    JavaScript development.
+handMeUps:
+  title:  Hand Me Ups
+  url: http://handmeups.herokuapp.com
+  github: http://www.github.com/allpurposename/the_pivot
+  img: handmeups.jpeg
+  Goal: >
+    For this three week project we were challenged to pivot a previous project
+    of a restaurant into an Etsy-like clothing site. The project was assigned
+    halfway through the program.
+  Responsibilities: >
+    Refactoring the cart, implementing the mailer, pivoting the
+    database, and pushing logic down the stack.
+pairr:
+  title:  Pairr
+  url: http://pairer.herokuapp.com
+  github: http://www.github.com/allpurposename/final_assessment
+  img: pairer.jpeg
+  Goal: >
+    We were given 24 hours to create a mini-tinder clone for developers. The main
+    project goals included. There were no frontend requirements.
+  Responsibilities: >
+    I was completely responsible for the entire project. Including that great css.

@@ -1,0 +1,22 @@
+---
+title: Portfolio
+layout: default
+permalink: /projects/
+description: While at the Turing School of Software and Design I completed dozens of projects. Here are a few
+---
+
+<div class="home">
+
+  {% assign projects = site.data.projects %}
+  {% for project in projects %}
+  {% assign proj = projects[project.first] %}
+  <div class="blog-box col-md-12 spacing-unit">
+    <div class="project-box col-md-6">
+      <a class="post-link col-md-3-offset" href="{{ proj.url }}">{{ proj.title }}</a>
+    </div>
+    <div class="image-preview-box col-md-6">
+      <img src="{{ site.url }}/img/{{ proj.img }}" alt="{{ proj.title }}">
+    </div>
+  </div>
+  {% endfor %}
+</div>

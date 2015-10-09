@@ -33,6 +33,15 @@
   margin-left: 25px;
 }
 
+.spacing-unit {
+  margin-bottom: $spacing-unit;
+}
+
+.project-box {
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+
 .blog-box {
   background-color: $background-color;
   background-image: url("../img/az-subtle.png");
@@ -215,7 +224,6 @@
  * Page content
  */
 .post {
-  margin-right: 14%;
   background-color: $background-color;
   background-image: url("../img/az-subtle.png");
   background-size: repeat;
@@ -240,6 +248,7 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  padding-top: 30px;
 
   > li {
     margin-bottom: $spacing-unit;
@@ -257,8 +266,9 @@
   font-size: $small-font-size;
   padding-top: 50px;
   padding-left: 25%;
-  padding-right: 15%;
+  padding-right: 25%;
   width: 100%;
+  text-align: -webkit-center;
 }
 
 
@@ -321,6 +331,44 @@
   }
 }
 
+.post-content-projects {
+  background-color: $background-color;
+  background-image: url("../img/az-subtle.png");
+  background-size: repeat;
+  padding-bottom: 50px;
+  font-size: $medium-small-font-size;
+  margin-bottom: $spacing-unit;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), inset 0px 1px 14px 5px rgba(138,174,213,0.34);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: $spacing-unit;
+
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}
+
 .post-content-about {
   background-color: $background-color;
   background-image: url("../img/az-subtle.png");
@@ -331,9 +379,10 @@
   margin-bottom: $spacing-unit;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), inset 0px 1px 14px 5px rgba(138,174,213,0.34);
   border-radius: 8px;
-  padding: 25px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: $spacing-unit;
-  margin-right: $spacing-unit;
 
 
   h2 {
